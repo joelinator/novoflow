@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "novoflow"
+version = "0.1.0"
+description = "High-Throughput De Novo Peptide Sequencing via Continuous-Time Discrete Flow Matching and Physical Knapsack Reachability"
+readme = "README.md"
+authors = [
+    { name = "Joel Gedeon Asa", email = "16p010@polytechnique.cm" }
+]
+license = { text = "Apache-2.0" }
+keywords = ["proteomics", "mass-spectrometry", "de-novo-sequencing", "flow-matching", "deep-learning", "bioinformatics"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.0.0",
+    "numpy>=1.22.0",
+    "scipy>=1.9.0",
+    "tqdm>=4.64.0",
+]
+
+[project.optional-dependencies]
+io = [
+    "pyteomics>=4.6",
+]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "flake8>=6.0.0",
+]
+
+[project.scripts]
+novoflow = "novoflow.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/joelinator/novoflow"
+Repository = "https://github.com/joelinator/novoflow"
+"Bug Tracker" = "https://github.com/joelinator/novoflow/issues"
