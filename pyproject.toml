@@ -10,13 +10,12 @@ readme = "README.md"
 authors = [
     { name = "Joel Gedeon Asa", email = "16p010@polytechnique.cm" }
 ]
-license = { text = "Apache-2.0" }
+license = "Apache-2.0"
 keywords = ["proteomics", "mass-spectrometry", "de-novo-sequencing", "flow-matching", "deep-learning", "bioinformatics"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Science/Research",
     "Topic :: Scientific/Engineering :: Bio-Informatics",
-    "License :: OSI Approved :: Apache Software License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
