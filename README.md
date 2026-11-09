@@ -1,5 +1,6 @@
 # NovoFlow
 
+[![PyPI version](https://img.shields.io/pypi/v/novoflow.svg)](https://pypi.org/project/novoflow/)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-ee4c2c.svg)](https://pytorch.org/)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
@@ -15,10 +16,20 @@ By default, NovoFlow automatically fetches the official **MassIVE-KB pretrained 
 
 ## Installation
 
+Install from PyPI:
+
+```bash
+pip install novoflow
+# Or with native mzML support:
+pip install "novoflow[io]"
+```
+
+Or install from source for development:
+
 ```bash
 git clone https://github.com/joelinator/novoflow.git
 cd novoflow
-pip install -e .[io]
+pip install -e .[dev,io]
 ```
 
 ---
